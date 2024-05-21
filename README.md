@@ -35,6 +35,13 @@ env\Scripts\activate
 pip install -r requirements.txt
 ```
 
+
+## Copy Enviroment file example
+```
+cp .env.example .env
+```
+
+
 ### Create Table
 
 ```
