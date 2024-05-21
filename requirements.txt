@@ -1,0 +1,4 @@
+dalybms==0.5.0
+pyserial==3.5
+psycopg2
+python-dotenv
