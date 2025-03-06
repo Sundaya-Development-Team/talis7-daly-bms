@@ -36,7 +36,7 @@ except Exception as e:
 # Input data
 port = input("Enter the port (example: /dev/ttyUSB0 or COM10): ")
 serial_number = input("Enter the serial number (example: AO2912182192): ")
-status = input("Enter the status (charge or discharge): ")
+status = input("Enter the status (charge or discharge): ").lower()
 
 # initialize the BMS
 bms = DalyBMS()
