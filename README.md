@@ -52,7 +52,7 @@ python create_table.py create --table loggers
 #### Crete table Realtime
 
 ```
-python create_table.py create --table loggers
+python create_table.py create --table realtime
 ```
 
 
