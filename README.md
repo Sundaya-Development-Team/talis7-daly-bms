@@ -44,6 +44,13 @@ cp .env.example .env
 
 ### Create Table
 
+#### Crete table Loggers
+```
+python create_table.py create --table loggers
+```
+
+#### Crete table Realtime
+
 ```
 python create_table.py create --table loggers
 ```
