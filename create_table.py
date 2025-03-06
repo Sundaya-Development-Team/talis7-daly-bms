@@ -27,5 +27,9 @@ if args.operation == 'create':
         table_name='loggers',
         columns='id SERIAL PRIMARY KEY, date VARCHAR, serial_number VARCHAR, total_voltage FLOAT, current FLOAT, soc_percent FLOAT, temperature INTEGER, cell VARCHAR, "createdAt" TIMESTAMP DEFAULT NOW(), "updatedAt" TIMESTAMP DEFAULT NOW()',
     )
+    db.create_table(
+        table_name='realtime',
+        columns='id SERIAL PRIMARY KEY, date VARCHAR, serial_number VARCHAR, port VARCHAR, status VARCHAR, total_voltage FLOAT, current FLOAT, soc_percent FLOAT, temperature INTEGER, cell VARCHAR, "createdAt" TIMESTAMP DEFAULT NOW(), "updatedAt" TIMESTAMP DEFAULT NOW()',
+    )
 elif args.operation == 'drop':
     db.drop_table(table_name=args.table_name)
